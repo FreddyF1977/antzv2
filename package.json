@@ -1,0 +1,22 @@
+{
+  "name": "antzv2",
+  "version": "1.0.0",
+  "description": "antz dev",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FreddyF1977/antzv2.git"
+  },
+  "keywords": [
+    "antz"
+  ],
+  "author": "Frédéric Fortier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FreddyF1977/antzv2/issues"
+  },
+  "homepage": "https://github.com/FreddyF1977/antzv2#readme"
+}
