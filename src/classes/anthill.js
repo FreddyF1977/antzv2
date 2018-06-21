@@ -9,4 +9,6 @@ export class Anthill extends Nest {
       ? params.id
       : this.type + "_" + uuidv1();
   }
+
+  build() {}
 }
