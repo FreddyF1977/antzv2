@@ -1,4 +1,5 @@
 import { Nest } from "./nest.js";
+import $ from "jquery";
 const uuidv1 = require("uuid/v1");
 
 export class Anthill extends Nest {
