@@ -17,5 +17,23 @@ export class Anthill extends Nest {
     this.zIndex = params.hasOwnProperty("zIndex") ? params.zIndex : 1;
   }
 
-  build() {}
+  build(params) {
+    //draw hill on the screen
+    $("<div id=idAntHill_'" + this.id + "'> </div>")
+      .css({
+        position: "absolute",
+        left: (params.hasOwnProperty("intPosX") ? params.intPosX : 100) + "px",
+        top: (params.hasOwnProperty("intPosY") ? params.intPosY : 100) + "px",
+        width: this.width,
+        height: this.height,
+        "background-color": this.color,
+        background:
+          "-webkit-radial-gradient(black 1px, " +
+          this.color +
+          " 10%, white 95%)",
+        "border-radius": this.borderRadius + "%",
+        "z-index": this.zIndex
+      })
+      .appendTo("body");
+  }
 }
