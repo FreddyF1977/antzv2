@@ -19,7 +19,7 @@ export class Anthill extends Nest {
 
   build(params) {
     //draw hill on the screen
-    $("<div id=idAntHill_'" + this.id + "'> </div>")
+    $("<div id='" + this.id + "'> </div>")
       .css({
         position: "absolute",
         left: (params.hasOwnProperty("intPosX") ? params.intPosX : 100) + "px",
