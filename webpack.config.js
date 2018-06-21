@@ -1,6 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
+const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -13,8 +14,9 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(["dist"]),
     new HtmlWebpackPlugin({
-      title: "Development"
-    })
+      title: "Antz Development"
+    }),
+    new HardSourceWebpackPlugin()
   ],
   output: {
     filename: "[name].bundle.js",
